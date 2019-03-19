@@ -43,6 +43,7 @@
     border-left: $archive-post-border-left;
 
     .archive-post-time {
+      font-family: $archive-post-time-font-family;
       margin-right: 10px;
       color: $dark-gray;
     }
