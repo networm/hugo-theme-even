@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: 'Mint Green';
 
 // Default theme color map
 $theme-color-map: (
@@ -298,6 +298,9 @@ $collection-title-font-size: 28px !default;
 
 // Padding of the archive post.
 $archive-post-padding: 3px 20px !default;
+
+// Font family of the archive post time.
+$archive-post-time-font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
 
 // Padding of the archive post in mobile.
 $archive-post-mobile-padding: 5px 10px !default;
