@@ -4,7 +4,7 @@
   {{- if and (not $paginator.HasPrev) .Site.Params.showArchiveCount }}
   <div class="archive-title">
     <span class="archive-post-counter">
-      {{ T "archiveCounter" (len .Data.Pages) }}
+      {{ T "archiveCounter" (len (where .Data.Pages "Type" "post")) }}
     </span>
   </div>
   {{- end -}}
