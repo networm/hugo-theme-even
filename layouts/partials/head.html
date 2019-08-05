@@ -28,6 +28,9 @@
   <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}" />
 {{- end }}
 
+<!-- robots config -->
+<meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
+
 <!-- baidu & google verification  -->
 {{ with .Site.Params.baiduVerification }}<meta name="baidu-site-verification" content="{{.}}" />{{ end }}
 {{ with .Site.Params.googleVerification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
