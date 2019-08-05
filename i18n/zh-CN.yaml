@@ -70,8 +70,14 @@ outdatedInfoWarningAfter:
 author:
   other: "文章作者"
 
+date:
+  other: "初次发布"
+
 lastMod:
   other: "上次更新"
+
+permanent:
+  other: "永久链接"
 
 markdown:
   other: "原始文档"
