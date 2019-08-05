@@ -96,4 +96,17 @@
     <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
   {{- end }}
 
+  <!-- commento -->
+  {{/* Only include commento if it's configured */}}
+  {{- if or (and (not .Site.IsServer) .Site.Params.comments.commento.enable) (and .Site.IsServer .Site.Params.comments.commento.enableLocal)}}
+    {{- if and (isset $.Site.Params.comments.commento "host") (isset $.Site.Params.comments.commento "js") -}}
+      <div id="commento"></div>
+      <script type="text/javascript"
+        defer
+        src="{{ $.Site.Params.comments.commento.host }}{{ $.Site.Params.comments.commento.js }}"
+      ></script>
+      <noscript>Please enable JavaScript to view the <a href="https://commento.io/">comments powered by commento.</a></noscript>
+    {{- end -}}
+  {{- end -}}
+
 {{- end }}
