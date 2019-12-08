@@ -1,8 +1,2 @@
 User-agent: *
 Sitemap: {{ "sitemap.xml" | absURL }}
-
-User-agent: Baiduspider
-Disallow: /
-
-User-agent: baiduspider
-Disallow: /
