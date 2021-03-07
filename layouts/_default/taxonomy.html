@@ -3,6 +3,11 @@
 {{- define "content" }}
 {{- $paginator := .Paginate .Data.Pages.ByDate.Reverse .Site.Params.archivePaginate -}}
 <section id="archive" class="archive">
+  <div class="archive-title">
+    <span class="archive-post-counter">
+      {{ T "archiveCounter" (len $paginator.Pages) }}
+    </span>
+  </div>
   {{ if not $paginator.HasPrev -}}
     {{ if eq .Data.Plural "tags" -}}
       <div class="archive-title tag">
